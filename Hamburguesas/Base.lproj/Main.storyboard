@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EIC-OK-UnZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="yBM-HK-FhC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="País" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr9-eX-L62">
+                                <rect key="frame" x="46" y="38" width="228" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esto sera un mensaje positivo" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzm-ot-fvS">
+                                <rect key="frame" x="15" y="71" width="304" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9a-dG-IJC">
+                                <rect key="frame" x="68" y="495" width="185" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Quiero una hamburguesa!"/>
+                                <connections>
+                                    <action selector="quieroHamburguesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="hoJ-rN-IXo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45787017617449666" green="0.76850880872483163" blue="0.67420826342281881" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="fr9-eX-L62" secondAttribute="trailing" constant="30" id="1gw-i6-aAz"/>
+                            <constraint firstItem="fr9-eX-L62" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="287-ae-EGz"/>
+                            <constraint firstItem="fr9-eX-L62" firstAttribute="top" secondItem="EIC-OK-UnZ" secondAttribute="bottom" constant="18" id="3Bi-H8-jV4"/>
+                            <constraint firstItem="J9a-dG-IJC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="5V7-mB-kd9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hzm-ot-fvS" secondAttribute="trailing" constant="-15" id="Cj9-sb-gs3"/>
+                            <constraint firstItem="hzm-ot-fvS" firstAttribute="top" secondItem="EIC-OK-UnZ" secondAttribute="bottom" constant="51" id="RTl-RG-d7y"/>
+                            <constraint firstItem="hzm-ot-fvS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1" id="jtV-aq-GAk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J9a-dG-IJC" secondAttribute="trailing" constant="51" id="sEz-wX-JN2"/>
+                            <constraint firstItem="yBM-HK-FhC" firstAttribute="top" secondItem="J9a-dG-IJC" secondAttribute="bottom" constant="43" id="zsC-J5-H2A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelHamburguesa" destination="hzm-ot-fvS" id="7C0-m9-WuQ"/>
+                        <outlet property="labelPais" destination="fr9-eX-L62" id="Lwb-VP-2ws"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="294" y="284"/>
+        </scene>
+    </scenes>
+</document>
